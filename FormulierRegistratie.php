@@ -26,7 +26,7 @@ session_start ();
                                 <div class="SubDropdown3">
                                     <button class="NavButton4"> Haha lozer</button>
                                          <ul class="SubDropdown4"> 
-                                              <li> <a href="FormulierRegistratie.php"> Klik hier</a> </i>
+                                              <li> <a href="FormulierRegistratie.php"> Je bent er al Sukkeltje</a> </i>
                                           </ul>
                                  </div>
                              </div>
@@ -54,7 +54,8 @@ session_start ();
 
     <h1> Registratie formulier </h1> 
     <p> Vul de formulier hieronder in om te registeren. </p>
-    <form class="formulier" action="" method="post"> 
+    <div class="midden"> 
+    <form class="formulier" action="FormulierRegistratie.php" method="post"> 
         <label for="Voornaam">Voornaam</label>
         <input type="text" id="Voornaam" name="Voornaam" required>
 
@@ -78,10 +79,12 @@ session_start ();
 
         <label for="Wachtwoord">Wachtwoord</label>
         <input type="password" id="Wachtwoord" name="Wachtwoord" required>
-
-        <input type="submit" name="submit" value="Registreren">
-
-    </form> 
+        
+        <div class="Bewegen">
+            <input type="submit" name="submit" value="Registreren">
+        </div> 
+    </form>
+</div> 
     <script>
         function checkLeeftijd(leeftijd) {
         var meldingElement = document.getElementById("leeftijdsMelding");
