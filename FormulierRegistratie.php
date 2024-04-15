@@ -10,7 +10,7 @@ session_start ();
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/ecd9dddd0d.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registreren</title>
+    <title>Registratie Formulier</title>
     <link rel="stylesheet" href="NavCss.css"> 
     <link rel="stylesheet" href="Main.css">
 </head>
@@ -92,10 +92,13 @@ session_start ();
 
             if (leeftijd < 18) {
                 meldingElement.textContent = "Jonger dan 18? Damn kind";
+                meldingElement.style.color = "white";
             } else if (leeftijd > 30 && leeftijd <= 60) {
                 meldingElement.textContent = "30+? Je zou maar zo oud zijn";
+                meldingElement.style.color = "white";
             } else if (leeftijd > 60 && leeftijd <= 100){
                 meldingElement.textContent = "60+? Fakka Omaatje ga van het internet af!!";
+                meldingElement.style.color = "white";
             }  else if (leeftijd > 100) {
                 meldingElement.innerHTML = '<a href="https://www.youtube.com/watch?v=F6Fh5NGXDPw&ab_channel=TYY">Kijk eens hier</a>';
                 meldingElement.style.color = "white";
