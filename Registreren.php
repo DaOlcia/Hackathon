@@ -1,6 +1,6 @@
 <?php
 
-require_once "conn.php"; // Database connectie pagina (Gaby)
+require_once "Conn.php"; // Database connectie pagina
 
 // Haal alle code weg van de ingevulde gegevens (Gaby)
 $voornaam = strip_tags($_POST["Voornaam"]);

@@ -1,0 +1,31 @@
+.formulier {
+    display:flex;
+    padding: 30px;
+    flex-direction: column;
+    background-image: url("Formulier-Background.png");
+    background-size: cover;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: oblique;
+    font-variant: small-caps;
+    color:  rgb(0, 0, 0);
+    width: 800px;
+}
+
+.formulier label {
+    margin-top: 20px;
+}
+
+form input {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color:  rgb(231, 227, 227);
+    color: black;
+}
+
+form input[type=sumbit]{
+    width: fit-content;
+}
